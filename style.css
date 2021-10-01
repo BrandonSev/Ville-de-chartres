@@ -274,13 +274,13 @@ button {
     grid-gap: 1rem;
   }
   .magazine__bg:nth-child(2)::after {
-    background: url(image/vector.svg) no-repeat !important;
+    background: url(images/vector.svg) no-repeat !important;
     left: inherit !important;
     right: 0 !important;
   }
   .magazine__bg:nth-child(4)::after,
   .magazine__bg:nth-child(3)::after {
-    background: url(image/vector-inversed.svg) no-repeat;
+    background: url(images/vector-inversed.svg) no-repeat;
     left: 0;
   }
 }
@@ -327,10 +327,10 @@ button {
   top: 0px;
   bottom: 0;
   right: 0;
-  background: url(image/vector.svg) no-repeat;
+  background: url(images/vector.svg) no-repeat;
 }
 
 .magazine__bg:nth-child(even)::after {
-  background: url(image/vector-inversed.svg) no-repeat;
+  background: url(images/vector-inversed.svg) no-repeat;
   left: 0;
 }
