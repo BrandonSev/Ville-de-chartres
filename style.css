@@ -1,3 +1,4 @@
+
 :root {
   --deep-blue: #11538c;
   --blue: #115d8c;
@@ -89,6 +90,7 @@ header {
   width: 19px;
   background-color: white;
   transition: 0.3s;
+
   transform-origin: bottom right;
 }
 .header__menu_mobile {
@@ -96,6 +98,7 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
+
   background-color: var(--deep-blue);
   transform: translateX(-100vw);
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
@@ -149,9 +152,9 @@ footer p {
 .footer__social {
   padding: 1rem;
   text-align: center;
+
   background-color: var(--blue-green);
 }
-
 .footer__social_media {
   margin-top: 2rem;
 }
@@ -227,7 +230,6 @@ footer p {
     left: 0;
   }
 }
-
 @keyframes fadeOutRight {
   from {
     opacity: 1;
