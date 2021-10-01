@@ -3,14 +3,28 @@
 }
 body {
   padding: 0;
-  margin: 0;
+  margin: 5;
   line-height: 1.2;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montaserrat", "Verdana", Arial, sans-serif;
 }
 h1 {
   font-size: 3rem;
+  color: rgb(4,157,217);
 }
-li {
+
+h2 {
+  font-size: 2rem;
+  color: rgb(4,278,217);
+
+}
+
+h3 {height: 2px;
+  font-size: 1.5rem;
+ 
+  color: rgb(3,166,44);
+}
+
+ul li {
   list-style: none;
 }
 
@@ -106,11 +120,16 @@ header {
 .image__presentation {
   margin-top: 2rem;
 }
-.image__presentation > img {
+.img__hero > img {
   display: block;
   width: 100%;
-  max-height: 550px;
+  /*max-height: 550px;*/
+  height: auto;
+  width: 100%;
   object-fit: fill;
+  margin:0px;
+  padding: 0%;
+
 }
 
 /* CARD */
@@ -118,6 +137,32 @@ header {
 .card img {
   max-width: 100%;
 }
+
+/* CSS page histoire*/
+.grid__histoire{
+  background-color: burlywood;
+  display: block;
+  width: 100%;  /*ne fonctionne pas, voir les parents*/
+  margin: 0px;  /*ne fonctionne pas, voir les parents*/
+  padding:0%;   /*ne fonctionne pas, voir les parents*/
+}
+
+.img_histoire{
+  display: flex;
+  width: auto;
+  text-align:center;
+}
+
+.chronologie {
+  background-color: rgb(0, 174, 255);
+  display: block;
+  Width:60%;
+  text-align : center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
 
 /* FOOTER */
 footer {
@@ -131,12 +176,17 @@ footer p {
   text-align: center;
   background-color: rgb(0, 174, 255);
 }
-.footer__social button {
+button {
   width: max-content;
   padding: 1rem 3rem;
-  background-color: blueviolet;
+  background-color: rgb(245,26,91);
   border-radius: 1rem;
   border: none;
+  color:white;
+  box-shadow:5px 5px black;
+  font-size: 18px;
+  font-weight: bold ;
+
 }
 .footer__social button:hover {
   cursor: pointer;
@@ -168,7 +218,7 @@ footer p {
 .footer__partner {
   margin-top: 2rem;
   padding: 1rem;
-  background-color: blueviolet;
+  background-color:rgb(3,166,44);
   text-align: center;
 }
 .footer__partner_list_logo img {
