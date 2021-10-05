@@ -210,13 +210,18 @@
         <!-- Bloc des liens sociaux et télephone du footer-->
         <div class="footer__social white">
           <h2>Restons connectées</h2>
-          <button class="white">Contact</button>
-          <form action="Contact">
-            <div>
-            <label for="name">nom :</label>
+          <button class="white" id ="contact">Contact</button>
+          <!--modal -->
+          <div id="myModal" class="modal">
+            <div class = "modal-content">
+              <span class="close">&times;</span>
+
+          <form action="Contact" class="formulaire">
+            <div class="nom">
+            <label for="name">Nom :</label>
             <input type="text" id = "name" name=user_name><br><br>
             </div>
-            <div>
+            <div class="email">
             <label for="Email">Email :</label>
             <input type="email" id = "mail" name="user_mail"><br><br>
             </div>
@@ -229,6 +234,8 @@
             </div>
 
           </form>
+          </div>
+          </div>
           <div class="footer__social_media">
             <ul>
               <li>
