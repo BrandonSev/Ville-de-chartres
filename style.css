@@ -174,12 +174,9 @@ header {
 }
 
 /* CSS page histoire*/
-.grid__histoire {
+/*.grid__histoire {
   background-color: burlywood;
   display: block;
-  width: 100%; /*ne fonctionne pas, voir les parents*/
-  margin: 0px; /*ne fonctionne pas, voir les parents*/
-  padding: 0%; /*ne fonctionne pas, voir les parents*/
 }
 
 .img_histoire {
