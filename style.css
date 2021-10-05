@@ -163,6 +163,26 @@ header {
   object-fit: cover;
 }
 
+/*contact modal */
+#myModal{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content{
+  background-color: white ;
+  color: black;
+}
+.formulaire{
+  display: block;
+  align-items: center;
+}
+
 /* CARD */
 
 .card img {
@@ -174,12 +194,9 @@ header {
 }
 
 /* CSS page histoire*/
-.grid__histoire {
+/*.grid__histoire {
   background-color: burlywood;
   display: block;
-  width: 100%; /*ne fonctionne pas, voir les parents*/
-  margin: 0px; /*ne fonctionne pas, voir les parents*/
-  padding: 0%; /*ne fonctionne pas, voir les parents*/
 }
 
 .img_histoire {
