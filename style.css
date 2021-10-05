@@ -25,7 +25,6 @@ h2 {
 }
 
 h3 {
-  height: 2px;
   font-size: 1.5rem;
   color: var(--blue);
 }
@@ -33,6 +32,11 @@ h3 {
 ul li {
   list-style: none;
 }
+
+ul.show__list li{
+list-style:inherit  ;
+}
+
 button {
   width: max-content;
   padding: 1rem 3rem;
@@ -151,6 +155,10 @@ header {
   max-width: 100%;
 }
 
+.card__body h3{
+  margin: 10px 5px 10px 5px;
+}
+
 /* CSS page histoire*/
 .grid__histoire {
   background-color: burlywood;
@@ -247,7 +255,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .card__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 0 1rem;
   }
   .footer__social > div {
