@@ -1,4 +1,3 @@
-
 :root {
   --deep-blue: #11538c;
   --blue: #115d8c;
@@ -11,24 +10,24 @@
 }
 body {
   padding: 0;
-  margin: 5;
+  margin: 0;
   line-height: 1.2;
   font-family: "Montaserrat", "Verdana", Arial, sans-serif;
 }
 h1 {
   font-size: 3rem;
-  color: rgb(4,157,217);
+  color: rgb(4, 157, 217);
 }
 
 h2 {
   font-size: 2rem;
-  color: rgb(4,278,217);
-
+  color: var(--deep-blue);
 }
 
-h3 {height: 2px;
+h3 {
+  height: 2px;
   font-size: 1.5rem;
-  color: rgb(3,166,44);
+  color: var(--blue);
 }
 
 ul li {
@@ -135,16 +134,12 @@ header {
   text-align: center;
   z-index: inherit;
 }
-.image__presentation {
-  /* margin-top: 2rem; */
-}
 
-.image__hero {
+.img__hero {
   max-height: 60vh;
-
   overflow-y: scroll;
 }
-.image__hero > img {
+.img__hero > img {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -157,30 +152,28 @@ header {
 }
 
 /* CSS page histoire*/
-.grid__histoire{
+.grid__histoire {
   background-color: burlywood;
   display: block;
-  width: 100%;  /*ne fonctionne pas, voir les parents*/
-  margin: 0px;  /*ne fonctionne pas, voir les parents*/
-  padding:0%;   /*ne fonctionne pas, voir les parents*/
+  width: 100%; /*ne fonctionne pas, voir les parents*/
+  margin: 0px; /*ne fonctionne pas, voir les parents*/
+  padding: 0%; /*ne fonctionne pas, voir les parents*/
 }
 
-.img_histoire{
+.img_histoire {
   display: flex;
   width: auto;
-  text-align:center;
+  text-align: center;
 }
 
 .chronologie {
   background-color: rgb(0, 174, 255);
   display: block;
-  Width:60%;
-  text-align : center;
+  width: 60%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  }
-
-
+}
 
 /* FOOTER */
 footer {
@@ -200,11 +193,10 @@ button {
   background-color: var(--blue-green);
   border-radius: 1rem;
   border: none;
-  color:white;
-  box-shadow:5px 5px black;
+  color: white;
+  box-shadow: 5px 5px black;
   font-size: 18px;
-  font-weight: bold ;
-
+  font-weight: bold;
 }
 .footer__social button:hover {
   cursor: pointer;
@@ -282,6 +274,20 @@ button {
   .magazine__bg:nth-child(3)::after {
     background: url(images/vector-inversed.svg) no-repeat;
     left: 0;
+  }
+  .burger__menu {
+    display: none;
+  }
+  .header__logo {
+    order: 1;
+    text-align: inherit;
+  }
+  .header__nav_desktop {
+    display: flex;
+    order: 2;
+  }
+  .header__nav_desktop > *:not(:last-child) {
+    padding-right: 2rem;
   }
 }
 @keyframes fadeOutRight {
