@@ -26,10 +26,10 @@ h2 {
   font-size: 2rem;
   color: var(--grey);
 }
-
 h3 {
   font-size: 1.5rem;
   color: var(--deep-blue);
+  text-align: center;
 }
 header a {
   text-decoration: none;
@@ -38,14 +38,13 @@ header a {
 ul li {
   list-style: none;
 }
-
 ul.show__list li {
   list-style: inherit;
 }
-
 button:hover {
   cursor: pointer;
 }
+
 /* CLASS GENERIQUE */
 .container {
   max-width: 1330px;
@@ -58,7 +57,9 @@ button:hover {
 .white {
   color: white;
 }
-
+.block {
+  display: block !important;
+}
 /* HEADER */
 header {
   position: fixed;
@@ -129,7 +130,6 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-
   background-color: var(--blue-green);
   transform: translateX(-100vw);
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
@@ -148,7 +148,6 @@ header {
 .header__menu_mobile.is-open {
   transform: translateX(0);
 }
-
 .img__hero {
   max-height: 60vh;
   overflow-y: scroll;
@@ -180,23 +179,20 @@ header {
 }
 
 /* CARD */
-
 .card img {
   width: 100%;
 }
-
-.card__body h3 {
-  margin: 10px 5px 10px 5px;
-}
-
 .card__body {
   margin: 10px 5px 10px 5px;
 }
-
 .card__container__histoire {
   grid-template-columns: 1;
   grid-template-rows: 4;
   background-color: var(--grey);
+}
+.card__body__hist {
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 /*CHRONOLOGIE */
@@ -206,10 +202,13 @@ header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 .chronologie__text {
   background-color: rgba(0, 174, 255, 0.15);
-  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
 }
 
 /* FOOTER */
@@ -234,7 +233,6 @@ button {
   font-size: 18px;
   font-weight: bold;
 }
-
 .footer__social button:hover {
   cursor: pointer;
 }
@@ -282,6 +280,7 @@ button {
   width: 350px;
   height: 250px;
 }
+
 @media screen and (min-width: 768px) {
   .card__container {
     display: grid;
@@ -290,13 +289,20 @@ button {
   }
 
   /* css page histoire*/
-  .card__body__hist {
-    display: flex;
+  .card__header__img img {
     width: 300px;
     height: 200px;
     margin: 15px;
+    display: flex;
   }
-
+  .card__hist {
+    display: flex;
+    align-items: center;
+  }
+  .card__pair {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .footer__social > div {
     display: flex;
     justify-content: space-between;
@@ -346,16 +352,19 @@ button {
     padding-right: 2rem;
   }
 }
+
 @media screen and (max-width: 920px) {
   .header__nav_desktop > * {
     min-width: inherit;
   }
 }
+
 @media screen and (min-width: 1060px) {
   .header__logo {
     font-size: 2rem;
   }
 }
+
 @keyframes fadeOutRight {
   from {
     opacity: 1;
@@ -365,6 +374,7 @@ button {
     opacity: 0;
   }
 }
+
 .magazine__bg {
   width: 100%;
   position: relative;
@@ -401,7 +411,6 @@ button {
   right: 0;
   background: url(images/vector.svg) no-repeat;
 }
-
 .magazine__bg:nth-child(even)::after {
   background: url(images/vector-inversed.svg) no-repeat;
   left: 0;
