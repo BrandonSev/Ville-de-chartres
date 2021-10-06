@@ -18,7 +18,9 @@ h1 {
   font-size: 3rem;
   color: rgb(4, 157, 217);
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 h2 {
   font-size: 2rem;
   color: var(--deep-blue);
@@ -28,7 +30,7 @@ h3 {
   font-size: 1.5rem;
   color: var(--blue);
 }
-a {
+header a {
   text-decoration: none;
   color: inherit;
 }
@@ -36,8 +38,8 @@ ul li {
   list-style: none;
 }
 
-ul.show__list li{
-list-style:inherit  ;
+ul.show__list li {
+  list-style: inherit;
 }
 
 button {
@@ -166,10 +168,10 @@ header {
 /* CARD */
 
 .card img {
-  max-width: 100%;
+  width: 100%;
 }
 
-.card__body h3{
+.card__body h3 {
   margin: 10px 5px 10px 5px;
 }
 
@@ -270,7 +272,7 @@ button {
 @media screen and (min-width: 768px) {
   .card__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 1rem;
   }
   .footer__social > div {
@@ -325,6 +327,11 @@ button {
 @media screen and (max-width: 920px) {
   .header__nav_desktop > * {
     min-width: inherit;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .header__logo {
+    font-size: 2rem;
   }
 }
 @keyframes fadeOutRight {
