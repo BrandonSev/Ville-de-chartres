@@ -147,14 +147,10 @@ header {
 .header__menu_mobile.is-open {
   transform: translateX(0);
 }
-.img__hero {
-  max-height: 60vh;
-  overflow-y: scroll;
-}
 .img__hero > img {
   display: block;
   width: 100%;
-  object-fit: cover;
+  max-height: 60vh;
 }
 
 /*contact modal */
