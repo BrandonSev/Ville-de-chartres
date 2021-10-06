@@ -12,20 +12,28 @@ const modalContent = document.querySelector(".modal-content");
 const submitForm = document.querySelector(".formulaire");
 
 //pour ouvrir le modal en cliquant sur le boutton contact
-contactButton.addEventListener("click", () => {
-  contactModal.style.display = "flex";
-});
+if (contactButton) {
+  contactButton.addEventListener("click", () => {
+    contactModal.style.display = "flex";
+  });
+}
 // pour ouvrir et fermer le modal via la croix
-closeModal.addEventListener("click", () => {
-  contactModal.style.display = "none";
-});
+if (closeModal) {
+  closeModal.addEventListener("click", () => {
+    contactModal.style.display = "none";
+  });
+}
 
-submitForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Votre message a bien été envoyé !");
-});
-contactModal.addEventListener("click", (e) => {
-  console.log(e.target);
-  console.log(e.currentTarget);
-  e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
-});
+if (submitForm) {
+  submitForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Votre message a bien été envoyé !");
+  });
+}
+if (contactModal) {
+  contactModal.addEventListener("click", (e) => {
+    console.log(e.target);
+    console.log(e.currentTarget);
+    e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
+  });
+}
