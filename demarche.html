@@ -51,7 +51,6 @@
     </section>
     <!-- Bloc titre page -->
     <div class="container">
-      </section>
         <h1>Démarches et Services</h1>
         <!-- Grid -->
         <div class="grid__container">
@@ -89,20 +88,20 @@
                 <b>> Retrait de la carte d’identité ou passeport :</b> demande de rendez-vous à formuler auprès du Guichet unique 02 37 23 40 00 du lundi au vendredi de 9 h à 17 h et le samedi de 9 h à 12 h 30. <br>
                 <b>> Changement de nom ou de prénom :</b> demande de rendez-vous à formuler auprès du Guichet unique 02 37 23 40 00 du lundi au vendredi de 9 h à 17 h et le samedi de 9 h à 12 h 30. Vous serez reçu par un officier d’état civil.
                 </p>             
-              <label for="Formalités Administratives">Formalités Administratives:</label>
-              <select name="formality" id="formality-select">
+              <label for="formalitySelect">Formalités Administratives:</label>
+              <select name="formality" id="formalitySelect">
                 <option value="">-- Faites le choix de votre formalité --</option>
                 <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/certificats-divers-legalisation-de-signature-copie-certifiee-conforme-certificat-de-vie">Certificats divers : légalisation de signature, copie certifiée conforme, certificat de vie, ...</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/le-bapteme-civil/">Le baptême civil</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/declarer-ou-reconnaitre-la-naissance-dun-enfant/">Déclarer ou reconnaître la naissance d'un enfant</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-marier-a-chartres/">Se marier à Chartres</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-pacser-a-chartres/">Se pacser à Chartres</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/detention-de-chiens-dangereux/">Détention de chiens dangereux</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/recensement-citoyen-obligatoire/">Recensement citoyen obligatoire</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/sinscrire-sur-les-listes-electorales-a-chartres/">S'inscrire sur les listes électorales à Chartres</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/passeport/">Passeport Biométrique</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/carte-nationale-didentite/">Carte Nationale d'identité</option>
-                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/obtenir-un-extrait-dacte-de-naissance-de-mariage-ou-de-deces/">Obtenir un extrait d'Acte de Naissance, de Mariage ou de Décès</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/le-bapteme-civil">Le baptême civil</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/declarer-ou-reconnaitre-la-naissance-dun-enfant">Déclarer ou reconnaître la naissance d'un enfant</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-marier-a-chartres">Se marier à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-pacser-a-chartres">Se pacser à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/detention-de-chiens-dangereux">Détention de chiens dangereux</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/recensement-citoyen-obligatoire">Recensement citoyen obligatoire</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/sinscrire-sur-les-listes-electorales-a-chartres">S'inscrire sur les listes électorales à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/passeport">Passeport Biométrique</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/carte-nationale-didentite">Carte Nationale d'identité</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/obtenir-un-extrait-dacte-de-naissance-de-mariage-ou-de-deces">Obtenir un extrait d'Acte de Naissance, de Mariage ou de Décès</option>
               </select>
             </div>
             <div id="transport">
@@ -141,7 +140,6 @@
                 Courriel : <a href="mailto:secretariatchartres@cicat.fr">secretariatchartres@cicat.fr</a>
                 </p>
                 <h4>DISPOSITIF PASS – PERMANENCE D'ACCÈS AUX SOINS DE SANTÉ</h4>
-                <p>
                 <h4>Hôpital Louis Pasteur</h4>
                   <p>Tous les jours sauf le mercredi.<br>
                   Tél. 02 37 30 32 57.
@@ -151,9 +149,7 @@
                   Tél. 02 37 88 40 00.
                   </p>
                   <h4>Centre Médico Psychologique</h4>
-                    Tél. 02 37 26 57 00.
-                  </p>
-                </p>
+                  Tél. 02 37 26 57 00. <br><br>
             </div>
             <div id="teach">
               <h3>Enseignement</h3>
@@ -163,10 +159,17 @@
             </div>
             <div id="social">
               <h3>Action Sociale</h3>
-              <p>
-
-                Site : <a href=""></a>
-              </p>
+              <label for="socialSelect">Action Sociale :</label>
+              <select name="social" id="socialSelect">
+                <option value="">-- Choix de l'Action Sociale --</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/rsa-et-css">RSA et CSS</option>
+                <option value="https://www.chartresmetropolehabitat.com/?rgpd_action=oui">Logement Chartres métropole Habitat</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/hebergements/la-sous-location">La sous-location</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/hebergements/hebergement-temporaire">Hébergement temporaire</option>
+                <option value="https://www.chartres.fr//fr/urgences/accueil-et-hebergements-durgence">Accueil et Hébergements d'Urgence</option>
+                <option value="https://www.chartres.fr//fr/urgences/accueil-de-jour">Accueil de jour</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/aide-alimentaire">Aide alimentaire</option>
+              </select>
             </div>
             <div id="publicMarket">
               <h3>Marchés Publics</h3>
@@ -258,15 +261,16 @@
                   alt="chartres-métropole"
                 />
                 </a>
-            </div>
-            <div class="footer__partner_list_logo">
-              <a href="https://www.centre-valdeloire.fr/">
+            </li>
+            <li>
+              <a href="https://www.instagram.com/villedechartres/">
                 <img
-                  src="images/partenaire-centre-val-de-loir.png"
-                  alt="#"
+                  src="images/instagram.png"
+                  alt="instagram"
                 />
-            </div>
-          </div>
+                </a>
+            </li>
+          </ul>
         </div>
         <!-- Mentions légales -->
         <p class="mentions"><a href="#">Mentions légales</a></p>

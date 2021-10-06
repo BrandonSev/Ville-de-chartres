@@ -4,3 +4,10 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("is-open");
   mobileNav.classList.toggle("is-open");
 });
+
+const contactButton = document.querySelector("#contact");
+const contactModal = document.querySelector("#myModal");
+
+contactButton.addEventListener("click", () =>{
+  contactModal.style.display="block";
+});
