@@ -8,6 +8,15 @@ burger.addEventListener("click", () => {
 const contactButton = document.querySelector("#contact");
 const contactModal = document.querySelector("#myModal");
 
-contactButton.addEventListener("click", () =>{
-  contactModal.style.display="block";
+if (contactButton) {
+  contactButton.addEventListener("click", () => {
+    contactModal.style.display = "block";
+  });
+}
+
+const btnChronologie = document.querySelector("#btn__chronologie");
+const chronologieText = document.querySelector(".chronologie__text");
+console.log(chronologieText);
+btnChronologie.addEventListener("click", () => {
+  chronologieText.classList.toggle("block");
 });
