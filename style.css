@@ -12,37 +12,39 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.2;
-  font-family: "Montaserrat", "Verdana", Arial, sans-serif;
+  font-family: "Montserrat", "Verdana", Arial, sans-serif;
 }
 h1 {
   font-size: 3rem;
   color: rgb(4, 157, 217);
+  text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 h2 {
   font-size: 2rem;
-  color: var(--deep-blue);
+  color: var(--grey);
 }
-
 h3 {
-  height: 2px;
   font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--deep-blue);
+  text-align: center;
 }
-
+header a {
+  text-decoration: none;
+  color: inherit;
+}
 ul li {
   list-style: none;
 }
-button {
-  width: max-content;
-  padding: 1rem 3rem;
-  background-color: var(--turquoise);
-  border-radius: 1rem;
-  border: none;
+ul.show__list li {
+  list-style: inherit;
 }
 button:hover {
   cursor: pointer;
 }
+
 /* CLASS GENERIQUE */
 .container {
   max-width: 1330px;
@@ -50,22 +52,40 @@ button:hover {
   padding: 0 15px;
 }
 .flex {
-  display: flex;
+  display: flex; /* a quoi correspond cette classe?*/
 }
 .white {
   color: white;
 }
-
+.block {
+  display: block !important;
+}
 /* HEADER */
 header {
+  position: fixed;
+  width: 100%;
   padding: 0.5rem 0rem;
-  background-color: var(--deep-blue);
+  background-color: var(--blue-green);
   color: #fff;
+  z-index: 999;
 }
 .header {
   display: flex;
   align-items: center;
   z-index: 4;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  z-index: inherit;
+}
+.header__logo img {
+  max-width: 65px;
+  max-height: 65px;
+  padding-right: 1rem;
 }
 .header__nav_desktop {
   display: none;
@@ -110,8 +130,7 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-
-  background-color: var(--deep-blue);
+  background-color: var(--blue-green);
   transform: translateX(-100vw);
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   z-index: 3;
@@ -129,12 +148,6 @@ header {
 .header__menu_mobile.is-open {
   transform: translateX(0);
 }
-.header__logo {
-  width: 100%;
-  text-align: center;
-  z-index: inherit;
-}
-
 .img__hero {
   max-height: 60vh;
   overflow-y: scroll;
@@ -153,8 +166,12 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+/*A vérifier*/
   width: 100vw;
   height: 100vh;
+
+  padding: 4rem;
+/*A vérifier*/
   background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
   justify-content: center;
@@ -167,6 +184,7 @@ header {
   align-items: center;
   flex-direction: row-reverse;
   background-color: var(--deep-blue);
+  background-color: white;
   color: black;
   justify-content: right;
   border: 1px solid grey;
@@ -187,6 +205,8 @@ header {
 .formulaire {
   display: flex;
   justify-content: center;
+.formulaire {
+  display: block;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -199,42 +219,36 @@ header {
 /*image*/
 
 /* CARD */
-
 .card img {
-  width: 600px;
-  height: 600px;
+  width: 100%;
 }
-.card__container{
-  display: flex;
-  
+.card__body {
+  margin: 10px 5px 10px 5px;
 }
-.card__body{
-  display: flex;
-  width: 60%;
-  justify-content:center
+.card__container__histoire {
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  background-color: var(--grey);
 }
-/* CSS page histoire*/
-.grid__histoire {
-  background-color: burlywood;
-  display: block;
-  width: 100%; /*ne fonctionne pas, voir les parents*/
-  margin: 0px; /*ne fonctionne pas, voir les parents*/
-  padding: 0%; /*ne fonctionne pas, voir les parents*/
+.card__body__hist {
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
-.img_histoire {
-  display: flex;
-  width: auto;
-  text-align: center;
-}
-
+/*CHRONOLOGIE */
 .chronologie {
-  background-color: rgb(0, 174, 255);
   display: block;
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+}
+.chronologie__text {
+  background-color: rgba(0, 174, 255, 0.15);
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
 }
 
 /* FOOTER */
@@ -250,7 +264,6 @@ footer p {
   background-color: rgb(0, 174, 255);
 }
 button {
-  width: max-content;
   padding: 1rem 3rem;
   background-color: var(--blue-green);
   border-radius: 1rem;
@@ -307,10 +320,28 @@ button {
   width: 350px;
   height: 250px;
 }
+
 @media screen and (min-width: 768px) {
   .card__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 1rem;
+  }
+
+  /* css page histoire*/
+  .card__header__img img {
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    display: flex;
+  }
+  .card__hist {
+    display: flex;
+    align-items: center;
+  }
+  .card__pair {
+    display: flex;
+    flex-direction: row-reverse;
   }
   .footer__social > div {
     display: flex;
@@ -343,15 +374,37 @@ button {
   .header__logo {
     order: 1;
     text-align: inherit;
+    justify-content: flex-start;
+  }
+  .header__logo img {
+    max-width: 85px;
+    max-height: 85px;
   }
   .header__nav_desktop {
     display: flex;
+    align-items: center;
     order: 2;
+  }
+  .header__nav_desktop > * {
+    min-width: max-content;
   }
   .header__nav_desktop > *:not(:last-child) {
     padding-right: 2rem;
   }
 }
+
+@media screen and (max-width: 920px) {
+  .header__nav_desktop > * {
+    min-width: inherit;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .header__logo {
+    font-size: 2rem;
+  }
+}
+
 @keyframes fadeOutRight {
   from {
     opacity: 1;
@@ -361,6 +414,7 @@ button {
     opacity: 0;
   }
 }
+
 .magazine__bg {
   width: 100%;
   position: relative;
@@ -397,7 +451,6 @@ button {
   right: 0;
   background: url(images/vector.svg) no-repeat;
 }
-
 .magazine__bg:nth-child(even)::after {
   background: url(images/vector-inversed.svg) no-repeat;
   left: 0;

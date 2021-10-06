@@ -20,21 +20,22 @@
           <!-- Menu mobile -->
           <div class="header__menu_mobile">
             <ul>
-              <li>Accueil</li>
-              <li>Lien</li>
-              <li>Lien</li>
-              <li>Lien</li>
+              <li><a href="index.html"> Accueil</a></li>
+              <li><a href="decouvrir.html"> Découvrir et se détendre</a></li>
+              <li><a href="demarche.html"> Démarches et Services</a></li>
+              <li><a href="histoire.html"> Histoire de Chartres</a></li>
             </ul>
           </div>
           <!-- Menu desktop-->
           <ul class="header__nav_desktop">
-            <li>Accueil</li>
-            <li>Lien</li>
-            <li>Lien</li>
-            <li>Lien</li>
+            <li><a href="index.html"> Accueil</a></li>
+            <li><a href="decouvrir.html"> Découvrir et se détendre</a></li>
+            <li><a href="demarche.html"> Démarches et Services</a></li>
+            <li><a href="histoire.html"> Histoire de Chartres</a></li>
           </ul>
           <div class="header__logo">
-            <p>Logo</p>
+            <img src="images/logoChartres.png" alt="logo">
+            Ville de Chartres
           </div>
         </div>
       </div>
@@ -50,7 +51,6 @@
     </section>
     <!-- Bloc titre page -->
     <div class="container">
-      </section>
         <h1>Démarches et Services</h1>
         <!-- Grid -->
         <div class="grid__container">
@@ -61,7 +61,7 @@
             </div>
             <div class="grid__icon">
               <img src="images/iconTransport.png" alt="Icone Transport">
-              <p>Transport</p>
+              <p>Transport et Stationnement</p>
             </div>
             <div class="grid__icon">
               <img src="images/iconSante.png" alt="Icone Santé">
@@ -81,20 +81,45 @@
             </div>
             <div id="admin">
               <h3>Administration</h3>
-              <p>
-
-                Site : <a href=""></a>
-              </p>
+              <h4>Vos démarches</h4>
+                <p>Refaire votre passeport, carte d'identité, certificats divers, se marier, etc. Toutes les démarches !
+                <h4>Coronavirus COVID-19</h4>
+                <b style ="color:red;">Éviter les regroupements, la prise de rendez-vous devient également obligatoire dans les cas suivants :</b> <br><br>
+                <b>> Retrait de la carte d’identité ou passeport :</b> demande de rendez-vous à formuler auprès du Guichet unique 02 37 23 40 00 du lundi au vendredi de 9 h à 17 h et le samedi de 9 h à 12 h 30. <br>
+                <b>> Changement de nom ou de prénom :</b> demande de rendez-vous à formuler auprès du Guichet unique 02 37 23 40 00 du lundi au vendredi de 9 h à 17 h et le samedi de 9 h à 12 h 30. Vous serez reçu par un officier d’état civil.
+                </p>             
+              <label for="formalitySelect">Formalités Administratives:</label>
+              <select name="formality" id="formalitySelect">
+                <option value="">-- Faites le choix de votre formalité --</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/certificats-divers-legalisation-de-signature-copie-certifiee-conforme-certificat-de-vie">Certificats divers : légalisation de signature, copie certifiée conforme, certificat de vie, ...</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/le-bapteme-civil">Le baptême civil</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/declarer-ou-reconnaitre-la-naissance-dun-enfant">Déclarer ou reconnaître la naissance d'un enfant</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-marier-a-chartres">Se marier à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/se-pacser-a-chartres">Se pacser à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/detention-de-chiens-dangereux">Détention de chiens dangereux</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/recensement-citoyen-obligatoire">Recensement citoyen obligatoire</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/sinscrire-sur-les-listes-electorales-a-chartres">S'inscrire sur les listes électorales à Chartres</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/passeport">Passeport Biométrique</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/carte-nationale-didentite">Carte Nationale d'identité</option>
+                <option value="https://www.chartres.fr//fr/services-en-ligne/vos-demarches/obtenir-un-extrait-dacte-de-naissance-de-mariage-ou-de-deces">Obtenir un extrait d'Acte de Naissance, de Mariage ou de Décès</option>
+              </select>
             </div>
             <div id="transport">
-              <h3>Transport</h3>
-              <p>
-                
-                Site : <a href=""></a>
-              </p>
+              <h3>Transport et Stationnement</h3>
+              <p>Se déplacer, stationner ou s'orienter à Chartres</p>
+              <label for="transportSelect">Transport et Stationnement:</label>
+              <select name="transport" id="transportSelect">
+                <option value="">-- Votre recherche --</option>
+                <option value="https://www.chartres.fr//fr/vivre-ensemble/transports-urbains-et-periurbains">Transports urbains et périurbains</option>
+                <option value="https://www.chartres.fr//fr/guide-des-deplacements">Le guide des déplacements de la ville</option>
+                <option value="https://www.chartres.fr//fr/vivre-ensemble/stationnement">Stationnement : surface, souterrain, réglementé, minute ou résidentiel</option>
+                <option value="https://www.chartres.fr//fr/vivre-ensemble/zone-pietonne">Zone piétonne : accès résidents, occasionnels ou professionnels</option>
+                <option value="https://www.chartres.fr//fr/vivre-ensemble/occupation-domaine-public">Déménagement, travaux, ... : occupation du domaine public</option>
+              </select>
             </div>
             <div id="health">
               <h3>Santé</h3>
+              <p>Prendre soin de sa santé et se soigner à Chartres</p>
                 <h4>CENTRE HOSPITALIER LOUIS PASTEUR</h4>
                 <p>
                 4, rue Claude Bernard <br>
@@ -110,7 +135,8 @@
                 28000 Chartres <br><br>
                 Tél. 02 37 26 57 00.
                 </p>
-                CSAPA-CICAT <br>
+                <h4>CSAPA-CICAT</h4>
+                <p>
                 Prise en charge des sujets majeurs ou mineurs présentant une dépendance à des 
                 produits psycho-actifs licites ou illicites. Prévention, formation, écoute 
                 parentale, prise en charge ambulatoire et médico psycho sociale. <br><br>
@@ -118,78 +144,143 @@
                 10 rue de la maladerie <br>
                 28630 Le Coudray <br><br>
                 Tél. 02 37 21 48 29. <br><br>
-                Courriel : <a href="mailto:secretariatchartres@cicat.fr"></a>
+                Courriel : <a href="mailto:secretariatchartres@cicat.fr">secretariatchartres@cicat.fr</a>
+                </p>
+                <h4>DISPOSITIF PASS – PERMANENCE D'ACCÈS AUX SOINS DE SANTÉ</h4>
+                <h4>Hôpital Louis Pasteur</h4>
+                  <p>Tous les jours sauf le mercredi.<br>
+                  Tél. 02 37 30 32 57.
+                  </p>
+                  <h4>Foyer d'Accueil Chartrain</h4>
+                  <p>Sur rendez-vous.<br>
+                  Tél. 02 37 88 40 00.
+                  </p>
+                  <h4>Centre Médico Psychologique</h4>
+                  Tél. 02 37 26 57 00. <br><br>
             </div>
             <div id="teach">
               <h3>Enseignement</h3>
-              <p>
-
-                Site : <a href=""></a>
-              </p>
+              <p>Inscrire votre enfant à l'école, l'université, conservatoire, etc.</p>
+              <label for="teachSelect">Enseignement :</label>
+              <select name="teach" id="teachSelect">
+                <option value="">-- Choisir l'enseignement désiré --</option>
+                <option value="https://www.chartres.fr//etudes-superieures">Études supérieures</option>
+                <option value="https://www.chartres.fr//conservatoire/inscription">S'inscrire au Conservatoire ou CHAM / CHAD</option>
+                <option value="https://www.chartres.fr//ecoles/accueils-periscolaires-avant-et-apres-lecole">Accueils périscolaires avant et après l'école</option>
+                <option value="https://www.chartres.fr//vacances-scolaires-et-accueil-de-loisirs-du-mercredi">Accueils de loisirs du mercredi et vacances scolaires</option>
+                <option value="https://www.chartres.fr//ecoles/ecoles-maternelles-et-elementaires-privees">Écoles maternelles et élémentaires privées</option>
+                <option value="https://www.chartres.fr//ecoles/ecoles-maternelles-et-elementaires-publiques">Écoles maternelles et élémentaires publiques</option>
+                <option value="https://www.chartres.fr/ecoles/restauration-scolaire/inscription">Restauration scolaire</option>
+                <option value="https://www.chartres.fr//ecoles/perimetre-scolaire">Périmètre scolaire</option>
+                <option value="https://www.chartres.fr//ecoles/inscription-scolaire">Inscription scolaire</option>
+              </select>
             </div>
             <div id="social">
               <h3>Action Sociale</h3>
-              <p>
-
-                Site : <a href=""></a>
-              </p>
+              <p>L'Action Sociale à Chartres</p>
+              <label for="socialSelect">Action Sociale :</label>
+              <select name="social" id="socialSelect">
+                <option value="">-- Choix de l'Action Sociale --</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/rsa-et-css">RSA et CSS</option>
+                <option value="https://www.chartresmetropolehabitat.com/?rgpd_action=oui">Logement Chartres métropole Habitat</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/hebergements/la-sous-location">La sous-location</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/hebergements/hebergement-temporaire">Hébergement temporaire</option>
+                <option value="https://www.chartres.fr//fr/urgences/accueil-et-hebergements-durgence">Accueil et Hébergements d'Urgence</option>
+                <option value="https://www.chartres.fr//fr/urgences/accueil-de-jour">Accueil de jour</option>
+                <option value="https://www.chartres.fr//fr/vivre-a-chartres/action-sociale/action-sociale/aide-alimentaire">Aide alimentaire</option>
+              </select>
             </div>
             <div id="publicMarket">
               <h3>Marchés Publics</h3>
+              <h4>Attention : nouvelle plateforme des Marchés Publics</h4>
+              <b style ="color:red;">La plateforme de dématérialisation des marchés publics à changé et se trouve à l'adresse suivante : <a href="https://www.c-chartres-marches.fr">c-chartres-marches.fr</a>
+              </b>
+              <p>Si vous souhaitez proposer vos services à la Ville de Chartres, à Chartres métropole, au CCAS et au CIAS, vous devez y créer, ou y recréer, un compte pour consulter les offres.</p>
+              <img src="images/nouvellePlateformeMarchesPublicsChartres.png" alt="Photo nouvelle plateforme Marchés Publics">
+              <h4>Service Marchés Publics</h4>
               <p>
-
-                Site : <a href=""></a>
+              <b>Pour toute remise de plis sur support papier, et afin d'en assurer la bonne réception, les candidats sont invités à suivre les recommandations suivantes.</b><br><br>
+              Les plis remis contre récépissé (par le candidat ou un transporteur) doivent être déposés au Service des marchés publics (ouvert de 9 h à 12 h et 14 h à 17 h) à l'adresse suivante : <br><br>
+              <b>Service marchés publics</b><br>
+              1, avenue Joseph-Pichard <br>
+                28000 Chartres <br><br>
+                Les plis transmis par voie postale doivent être envoyés à l'adresse suivante : <br><br>
+                <b>Hôtel de Ville Service Marchés Publics</b> <br><br>
+                Place des Halles <br>
+                28019 Chartres Cedex <br><br>
+                Sauf indication contraire dans la consultation, aucun pli ne pourra être déposé à l'accueil de la Mairie, place des Halles à Chartres, ou de Chartres métropole, rue Charles-Brune à Lucé. <br><br>
+                <b>Rappel : Les plis doivent parvenir à destination avant la date et l'heure indiquées dans la consultation à laquelle le candidat soumissionne.</b>
               </p>
+              <h4>Accès à l'ancienne plateforme</h4>
+              <a href="https://marches.agglo-chartres.fr" title="Cliquer pour accéder à l'ancienne plateforme (nouvelle fenêtre)" target="_blank" class="external-link-new-window link-1">> Accéder à l'ancienne plateforme des marchés publics de Chartres métropole (nouvelle fenêtre).</a>
             </div>
           </div>
         </div>
       </section>
+    </div>
       <!-- Footer -->
       <footer>
         <!-- Bloc des liens sociaux et télephone du footer-->
         <div class="footer__social white">
-          <h2>Restons connectées</h2>
-          <button class="white">Contact</button>
-          <div class="footer__social_media">
-            <ul>
-              <li>
-                <img
-                  src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
-                  alt="#"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
-                  alt="#"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
-                  alt="#"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
-                  alt="#"
-                />
-              </li>
-            </ul>
-          </div>
-          <div class="footer__adress">
-            <p>
-              11 rue de test <br />
-              28000 Chartres <br />
-              02.37.88.09.77
-            </p>
-            <p>Lundi au Vendredi: 9h/18h</p>
+          <div class="container">
+            <div>
+              <h2 class="white">Restons connectés</h2>
+              <button class="white">Contact</button>
+              <div class="footer__social_media">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/villedechartres/">
+                      <img
+                        src="images/1024px-Facebook_Logo.png"
+                        alt="facebook"
+                      />
+                      </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/VilledeChartres/">
+                      <img
+                        src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
+                        alt="twitter"
+                      />
+                      </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/villedechartres/">
+                      <img
+                        src="images/instagram.png"
+                        alt="instagram"
+                      />
+                      </a>
+                  </li>
+                </ul>
+              </div>
+  
+            </div>
+            <div class="footer__adress">
+              <p>
+                Hotel de ville <br>
+                11 rue de test <br />
+                28000 Chartres <br />
+                02.37.88.09.77
+              </p>
+              <p>Lundi au jeudi: <br>
+                9h-12h / 13h30-18h <br><br>
+                vendredi: <br>
+                9h-12h / 13h30-16h
+              </p>
+            </div>
+  
+            <div class="footer__map">
+              <img
+                src="https://www.gralon.net/plan-ville/cartes/planr-place-des-epars-chartres-499324.jpg"
+                alt="map"
+              />
+            </div>
           </div>
         </div>
         <!-- Bloc des logos partenaires-->
         <div class="footer__partner white">
-          <h2>Nos partenaires</h2>
+          <h2 class="white">Nos partenaires</h2>
           <div class="footer__partner_list">
             <div class="footer__partner_list_logo">
               <a href="https://www.c-chartres.fr/">
@@ -219,6 +310,6 @@
         <!-- Mentions légales -->
         <p class="mentions"><a href="#">Mentions légales</a></p>
       </footer>
-    </div>
     <script src="./script.js"></script>
+  </body>
 </html>

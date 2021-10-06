@@ -11,6 +11,7 @@ const closeModal = document.querySelector(".close");
 const modalContent = document.querySelector(".modal-content");
 const submitForm = document.querySelector(".formulaire");
 
+
 //pour ouvrir le modal en cliquant sur le boutton contact
 contactButton.addEventListener("click", () => {
   contactModal.style.display = "flex";
@@ -28,4 +29,15 @@ contactModal.addEventListener("click", (e) => {
   console.log(e.target);
   console.log(e.currentTarget);
   e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
+if (contactButton) {
+  contactButton.addEventListener("click", () => {
+    contactModal.style.display = "block";
+  });
+}
+
+const btnChronologie = document.querySelector("#btn__chronologie");
+const chronologieText = document.querySelector(".chronologie__text");
+console.log(chronologieText);
+btnChronologie.addEventListener("click", () => {
+  chronologieText.classList.toggle("block");
 });
