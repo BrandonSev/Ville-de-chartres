@@ -166,17 +166,57 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+/*A vérifier*/
+  width: 100vw;
+  height: 100vh;
+
   padding: 4rem;
+/*A vérifier*/
   background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
 .modal-content {
+  position: fixed;
+  display: flex;
+  z-index: 1500;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: var(--deep-blue);
   background-color: white;
   color: black;
+  justify-content: right;
+  border: 1px solid grey;
+  width: 60%;
+  height: 60%;
+  flex-wrap: wrap;
 }
+.nom {
+  margin-top: 5%;
+}
+.close {
+  width: 2em;
+  height: 2em;
+  border: solid black 1px;
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.formulaire {
+  display: flex;
+  justify-content: center;
 .formulaire {
   display: block;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
+.formulaire div {
+  width: 100%;
+  height: 100%;
+}
+/*image*/
 
 /* CARD */
 .card img {
