@@ -166,21 +166,21 @@ header {
 }
 
 /*contact modal */
-#myModal{
+#myModal {
   display: none;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding:4rem;
+  padding: 4rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.modal-content{
-  background-color: white ;
+.modal-content {
+  background-color: white;
   color: black;
 }
-.formulaire{
+.formulaire {
   display: block;
   align-items: center;
 }
@@ -189,12 +189,6 @@ header {
 
 .card img {
   width: 100%;
-}
-
-.card__body h3 {
-  width: 300px;
-  height: 200px;
-  margin: 15px;
 }
 
 .card__body h3 {
@@ -209,11 +203,6 @@ header {
   grid-template-columns: 1;
   grid-template-rows: 4;
   background-color: var(--grey);
-}
-
-.card {
-  display: flex;
-  margin: 2%;
 }
 
 /* CSS page histoire*/
