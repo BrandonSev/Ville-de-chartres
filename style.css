@@ -12,7 +12,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.2;
-  font-family: "Montaserrat", "Verdana", Arial, sans-serif;
+  font-family: "Montserrat", "Verdana", Arial, sans-serif;
 }
 h1 {
   font-size: 3rem;
@@ -21,12 +21,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: var(--deep-blue);
+  color: var(--grey);
 }
 
 h3 {
   font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--deep-blue);
 }
 a {
   text-decoration: none;
@@ -36,8 +36,8 @@ ul li {
   list-style: none;
 }
 
-ul.show__list li{
-list-style:inherit  ;
+ul.show__list li {
+  list-style: inherit;
 }
 
 button {
@@ -57,7 +57,7 @@ button:hover {
   padding: 0 15px;
 }
 .flex {
-  display: flex;
+  display: flex; // a quoi correspond cette classe?
 }
 .white {
   color: white;
@@ -166,11 +166,28 @@ header {
 /* CARD */
 
 .card img {
-  max-width: 100%;
+  width: 300px;
+  height: 200px;
+  margin: 15px;
 }
 
-.card__body h3{
+.card__body h3 {
   margin: 10px 5px 10px 5px;
+}
+
+.card__body {
+  margin: 10px 5px 10px 5px;
+}
+
+.card__container__histoire {
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  background-color: var(--grey);
+}
+
+.card {
+  display: flex;
+  margin: 2%;
 }
 
 /* CSS page histoire*/
@@ -267,9 +284,10 @@ button {
 @media screen and (min-width: 768px) {
   .card__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 1rem;
   }
+
   .footer__social > div {
     display: flex;
     justify-content: space-between;
