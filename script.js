@@ -42,5 +42,5 @@ if (contactModal) {
 const btnChronologie = document.querySelector("#btn__chronologie");
 const chronologieText = document.querySelector(".chronologie__text");
 btnChronologie.addEventListener("click", () => {
-  chronologieText.style.display = "block";
+  chronologieText.classList.toggle("block");
 });
