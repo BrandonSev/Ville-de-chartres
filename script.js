@@ -37,3 +37,10 @@ if (contactModal) {
     e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
   });
 }
+
+// pour ouvrir la liste chronologique
+const btnChronologie = document.querySelector("#btn__chronologie");
+const chronologieText = document.querySelector(".chronologie__text");
+btnChronologie.addEventListener("click", () => {
+  chronologieText.style.display = "block";
+});
