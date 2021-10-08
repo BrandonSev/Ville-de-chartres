@@ -11,14 +11,6 @@ const closeModal = document.querySelector(".close");
 const modalContent = document.querySelector(".modal-content");
 const submitForm = document.querySelector(".formulaire");
 
-// contactButton.addEventListener("click", () =>{
-//   contactModal.style.display="block";
-// });
-
-//Script Démarches et Services//
-
-//pour ouvrir le modal en cliquant sur le boutton contact
-
 contactButton?.addEventListener("click", () => {
   contactModal.style.display = "flex";
 });
@@ -31,10 +23,12 @@ submitForm?.addEventListener("submit", (e) => {
   e.preventDefault();
   alert("Votre message a bien été envoyé !");
 });
+
 contactModal?.addEventListener("click", (e) => {
   console.log(e.target);
   console.log(e.currentTarget);
   e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
+});
 if (submitForm) {
   submitForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -52,6 +46,6 @@ if (contactModal) {
 // pour ouvrir la liste chronologique
 const btnChronologie = document.querySelector("#btn__chronologie");
 const chronologieText = document.querySelector(".chronologie__text");
-btnChronologie.addEventListener("click", () => {
+btnChronologie?.addEventListener("click", () => {
   chronologieText.classList.toggle("block");
 });
