@@ -316,7 +316,10 @@ button {
   width: 350px;
   height: 250px;
 }
-
+.card__hist,
+.card__pair {
+  padding: 1rem;
+}
 @media screen and (min-width: 768px) {
   .card__container {
     display: grid;
@@ -335,7 +338,6 @@ button {
   .card__hist {
     display: flex;
     align-items: center;
-    padding: 1rem;
   }
   .card__body__hist {
     padding: 1rem;
@@ -415,6 +417,7 @@ button {
     opacity: 0;
   }
 }
+
 .magazine .card.news {
   display: block;
   margin-bottom: 1rem;
