@@ -41,7 +41,7 @@
       </div>
     </header>
     <!-- Bloc image principal -->
-    <section class="image">
+    <section>
       <div class="img__hero">
         <img
           src="https://www.cote-chartres.com/wp-content/uploads/2020/12/visiter-chartres.jpg"
@@ -107,7 +107,6 @@
               </div>
               <div class="card__body">
                 <h3>Vide grenier, brocante</h3>
-
                 <p>
                   Le « Rendez-vous des chineurs » vous permet de dégoter meubles, objets anciens, livres de seconde main… Et bien plus encore.
                   Informations pratiques :<br>
@@ -116,7 +115,7 @@
                   <li>Lieu : place Billard, 28000 Chartres.</li>
                   <li>Renseignements : 06 42 37 77 46</li>
                   <li>Site : www.ohvl-international.com</li>
-                </ul>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -128,7 +127,7 @@
         <h1># Chartres Web magazine</h1>
         <div class="magazine">
           <a href="#" class="card news">
-            <div class="magazine__bg" style="background:url(./images/brocante.jpg) no-repeat center;background-size:cover">
+            <div class="magazine__bg" style="background:url(./images/reportage.png) no-repeat center;background-size:cover">
               <div class="magazine__polygon">
                   <div>
                     <span>Interviews</span>
@@ -140,7 +139,7 @@
             </div>
           </a>
           <a href="#" class="card news">
-            <div class="magazine__bg" style="background:url(./images/brocante.jpg) no-repeat center;background-size:cover">
+            <div class="magazine__bg" style="background:url(./images/renaud_gourdon.png) no-repeat center;background-size:cover">
               <div class="magazine__polygon">
                   <div>
                     <span>Portraits</span>
@@ -151,7 +150,7 @@
             </div>
           </a>
           <a href="#" class="card news">
-            <div class="magazine__bg" style="background:url(./images/brocante.jpg) no-repeat center;background-size:cover">
+            <div class="magazine__bg" style="background:url(./images/Mongolfireres.png) no-repeat center;background-size:cover">
               <div class="magazine__polygon">
                   <div>
                     <span>Photos/Vidéos</span>
@@ -162,7 +161,7 @@
             </div>
           </a>
           <a href="#" class="card news">
-            <div class="magazine__bg" style="background:url(./images/brocante.jpg) no-repeat center;background-size:cover">
+            <div class="magazine__bg" style="background:url(./images/musique.png) no-repeat center;background-size:cover">
               <div class="magazine__polygon">
                   <div>
                     <span>Reportages</span>
@@ -183,7 +182,29 @@
         <div class="container">
           <div>
             <h2 class="white">Restons connectés</h2>
-            <button class="white">Contact</button>
+            <button class="white" id="contact">Contact</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <form action="Contact" class="formulaire">
+                  <div class="nom">
+                    <label for="name">Nom :</label>
+                    <input type="text" id = "name" name=user_name /><br><br>
+                  </div>
+                  <div class="email">
+                    <label for="Email">Email :</label>
+                    <input type="email" id = "mail" name="user_mail" /><br><br>
+                  </div>
+                  <div>
+                    <label for="msg">Message : </label>
+                    <textarea name="msg" id="user_message" cols="30" rows="10"></textarea>
+                  </div>
+                  <div>
+                    <input type="submit" value="Envoyé" >
+                  </div>
+                </form>
+              </div>
+            </div>
             <div class="footer__social_media">
               <ul>
                 <li>
@@ -216,10 +237,10 @@
           </div>
           <div class="footer__adress">
             <p>
-              Hotel de ville <br>
-              11 rue de test <br />
-              28000 Chartres <br />
-              02.37.88.09.77
+              Hôtel de ville <br>
+              11 rue de test <br>
+              28000 Chartres <br><br>
+              Tél : 02.37.88.09.77
             </p>
             <p>Lundi au jeudi: <br>
               9h-12h / 13h30-18h <br><br>
@@ -229,7 +250,7 @@
           </div>
 
           <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871.4796262361963!2d1.4853905749135718!3d48.44363715742267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40c4f33dd9d71%3A0x31849dc227244cbd!2sH%C3%B4tel%20de%20Ville!5e0!3m2!1sfr!2sfr!4v1633532471050!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871.4796262361963!2d1.4853905749135718!3d48.44363715742267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40c4f33dd9d71%3A0x31849dc227244cbd!2sH%C3%B4tel%20de%20Ville!5e0!3m2!1sfr!2sfr!4v1633532471050!5m2!1sfr!2sfr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -239,10 +260,7 @@
         <div class="footer__partner_list">
           <div class="footer__partner_list_logo">
             <a href="https://www.c-chartres.fr/">
-              <img
-              src="images/partenaire-c-chartres.jpg"
-              alt="C-chartres"
-              />
+              <img src="images/partenaire-c-chartres.jpg" alt="C-chartres" />
             </a>
           </div>
           <div class="footer__partner_list_logo">
@@ -251,14 +269,12 @@
                 src="images/partenaire-chartres-metropole.jpg"
                 alt="chartres-métropole"
               />
-              </a>
+            </a>
           </div>
           <div class="footer__partner_list_logo">
             <a href="https://www.centre-valdeloire.fr/">
-              <img
-                src="images/partenaire-centre-val-de-loir.png"
-                alt="#"
-              />
+              <img src="images/partenaire-centre-val-de-loir.png" alt="#" />
+            </a>
           </div>
         </div>
       </div>

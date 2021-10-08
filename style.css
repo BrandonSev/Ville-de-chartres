@@ -134,7 +134,6 @@ header {
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   z-index: 3;
   left: 0;
-  right: 40vw;
 }
 .header__menu_mobile ul {
   display: flex;
@@ -143,6 +142,7 @@ header {
   height: 100%;
   gap: 4rem;
   justify-content: center;
+  padding: 3rem;
 }
 .header__menu_mobile.is-open {
   transform: translateX(0);
@@ -222,6 +222,9 @@ header {
   grid-template-columns: 1;
   grid-template-rows: 4;
   background-color: var(--grey);
+}
+.card__header__img img {
+  width: 100%;
 }
 .card__body__hist {
   padding-right: 2px;
@@ -326,18 +329,25 @@ button {
   }
   /* css page histoire*/
   .card__header__img img {
+    display: block;
     width: 300px;
-    height: 200px;
-    margin: 15px;
-    display: flex;
   }
   .card__hist {
     display: flex;
     align-items: center;
+    padding: 1rem;
+  }
+  .card__body__hist {
+    padding: 1rem;
   }
   .card__pair {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .footer__social .container {
+    gap: 0.9rem;
   }
   .footer__social > div {
     display: flex;
