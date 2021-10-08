@@ -134,7 +134,6 @@ header {
   transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   z-index: 3;
   left: 0;
-  right: 40vw;
 }
 .header__menu_mobile ul {
   display: flex;
@@ -143,6 +142,7 @@ header {
   height: 100%;
   gap: 4rem;
   justify-content: center;
+  padding: 3rem;
 }
 .header__menu_mobile.is-open {
   transform: translateX(0);
@@ -152,7 +152,7 @@ header {
   width: 100%;
   max-height: 60vh;
 }
-
+/*css Renaud*/
 /*contact modal */
 #myModal {
   display: none;
@@ -205,7 +205,12 @@ header {
   height: 100%;
 }
 /*image*/
-
+.card__header img{
+  max-width: 100%;
+  max-height: 350px;
+  height: 350px;
+}
+/*fin css Renaud bisous ;p */ 
 /* CARD */
 .card img {
   width: 100%;
@@ -217,6 +222,9 @@ header {
   grid-template-columns: 1;
   grid-template-rows: 4;
   background-color: var(--grey);
+}
+.card__header__img img {
+  width: 100%;
 }
 .card__body__hist {
   padding-right: 2px;
@@ -308,28 +316,40 @@ button {
   width: 350px;
   height: 250px;
 }
-
+.card__hist,
+.card__pair {
+  padding: 1rem;
+}
 @media screen and (min-width: 768px) {
   .card__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 1rem;
   }
-
+  .card__container#decouvir{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
   /* css page histoire*/
   .card__header__img img {
+    display: block;
     width: 300px;
-    height: 200px;
-    margin: 15px;
-    display: flex;
   }
   .card__hist {
     display: flex;
     align-items: center;
   }
+  .card__body__hist {
+    padding: 1rem;
+  }
   .card__pair {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .footer__social .container {
+    gap: 0.9rem;
   }
   .footer__social > div {
     display: flex;
@@ -397,6 +417,7 @@ button {
     opacity: 0;
   }
 }
+
 .magazine .card.news {
   display: block;
   margin-bottom: 1rem;

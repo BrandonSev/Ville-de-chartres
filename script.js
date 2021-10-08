@@ -35,4 +35,23 @@ contactModal?.addEventListener("click", (e) => {
   console.log(e.target);
   console.log(e.currentTarget);
   e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
+if (submitForm) {
+  submitForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Votre message a bien été envoyé !");
+  });
+}
+if (contactModal) {
+  contactModal.addEventListener("click", (e) => {
+    console.log(e.target);
+    console.log(e.currentTarget);
+    e.target.id == "myModal" ? (contactModal.style.display = "none") : null;
+  });
+}
+
+// pour ouvrir la liste chronologique
+const btnChronologie = document.querySelector("#btn__chronologie");
+const chronologieText = document.querySelector(".chronologie__text");
+btnChronologie.addEventListener("click", () => {
+  chronologieText.classList.toggle("block");
 });
